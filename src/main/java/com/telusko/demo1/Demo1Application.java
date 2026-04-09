@@ -8,7 +8,7 @@ public class Demo1Application
     public static void main( String[] args )
     {
         
-    	ApplicationContext context = new ClassPathXmlApplicationContext();  // create a container
+    	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");  // create a container
 //    	Alien obj = new Alien();
     	Alien obj = (Alien) context.getBean("alien");
     	obj.code();
