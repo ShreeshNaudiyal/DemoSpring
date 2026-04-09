@@ -6,7 +6,13 @@
     <!-- bean definitions here -->
 
 
-    <bean id="alien" class="com.telusko.demo1.Alien">
-
+    <bean id="alien1" class="com.telusko.demo1.Alien" scope="prototype">
+    </bean> 
+    <!-- <bean id="alien2" class="com.telusko.demo1.Alien">
+    </bean>  -->
+    <bean id="laptop" class="com.telusko.demo1.Laptop">
     </bean> 
 </beans>
+
+<!-- prototype scope: every time you call getBean, a new object will be created
+singleton scope: every time you call getBean, the same object will be returned -->

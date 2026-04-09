@@ -10,8 +10,13 @@ public class Demo1Application
         
     	ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");  // create a container
 //    	Alien obj = new Alien();
-    	Alien obj = (Alien) context.getBean("alien");
-    	obj.code();
+    	Alien obj1 = (Alien) context.getBean("alien1");
+        obj1.age = 21;
+        System.out.println(obj1.age);
+
+        Alien obj2 = (Alien) context.getBean("alien1");
+        System.out.println(obj2.age);
+    	//obj.code();
     	
     }
 }
