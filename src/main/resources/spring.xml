@@ -6,10 +6,14 @@
     <!-- bean definitions here -->
 
 
-    <bean id="alien1" class="com.telusko.demo1.Alien" scope="prototype">
-    </bean> 
+    <!-- <bean id="alien1" class="com.telusko.demo1.Alien" scope="prototype">
+    </bean>  -->
     <!-- <bean id="alien2" class="com.telusko.demo1.Alien">
     </bean>  -->
+
+    <bean id="alien1" class="com.telusko.demo1.Alien" >
+        <property name="age" value="21"></property>
+    </bean>
     <bean id="laptop" class="com.telusko.demo1.Laptop">
     </bean> 
 </beans>
