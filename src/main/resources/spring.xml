@@ -13,7 +13,10 @@
 
     <bean id="alien1" class="com.telusko.demo1.Alien" >
         <property name="age" value="21"></property>
+         <property name="laptop" ref="laptop"></property> <!--for reference to another bean -->
     </bean>
+    <!-- make sure to have a setter method for laptop in Alien class -->
+    <!-- make sure that you should have a ref created for laptop bean before you can use it in alien1 bean -->
     <bean id="laptop" class="com.telusko.demo1.Laptop">
     </bean> 
 </beans>
